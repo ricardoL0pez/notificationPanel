@@ -1,0 +1,181 @@
+.main {
+  padding: 24px 16px;
+  background-color: yellow;
+}
+
+.notifications {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  & .title {
+    color: var(--very-dark-blue);
+    font-weight: 800;
+    font-size: 1.25em;
+    word-spacing: 9px;
+  }
+
+  & .number {
+    background-color: var(--blue);
+    color: var(--white);
+    display: inline-block;
+    width: 32px;
+    height: 25px;
+    text-align: center;
+    align-content: center;
+  }
+
+  & .mark {
+    color: dodgerblue;
+    font-size: 0.875em;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  & .markAllRead {
+    color: var(--grayish-blue);
+    font-size: 0.875em;
+    cursor: default;
+
+    &:hover {
+      color: var(--grayish-blue);
+    }
+  }
+}
+
+.post {
+  background-color: var(--white);
+  box-shadow: 0px 5px 10px -5px #000000;
+  display: flex;
+  gap: 13px;
+  min-width: 343px;
+  padding: 16px;
+  font-size: 0.875em;
+  cursor: pointer;
+  margin: 0 auto 10px;
+  color: var(--dark-grayish-blue);
+  position: relative;
+
+  &:hover{
+    transform: translateY(-2%) translateX(0%);
+  }
+
+  & .image {
+    width: 39px;
+    height: 39px;
+  }
+
+  & .image1 {
+    background: url(./assets/images/uno.png) no-repeat center center;
+    background-size: cover;
+    width: 39px;
+    height: 39px;
+  }
+  & .image2 {
+    background: url(./assets/images/dos.png) no-repeat center center;
+    background-size: cover;
+    width: 39px;
+    height: 39px;
+  }
+  & .image3 {
+    background: url(./assets/images/tres.png) no-repeat center center;
+    background-size: cover;
+    width: 39px;
+    height: 39px;
+  }
+  & .image4 {
+    background: url(./assets/images/cuatro.png) no-repeat center center;
+    background-size: cover;
+    width: 39px;
+    height: 39px;
+  }
+  & .image5 {
+    background: url(./assets/images/cinco.png) no-repeat center center;
+    background-size: cover;
+    width: 39px;
+    height: 39px;
+  }
+  & .image6 {
+    background: url(./assets/images/seis.png) no-repeat center center;
+    background-size: cover;
+    width: 39px;
+    height: 39px;
+  }
+
+  & .name {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+
+    &:hover {
+      color:dodgerblue;
+    }
+  }
+
+  & .reaction {
+    font-weight: bold;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  & .time {
+    color: var(--grayish-blue);
+    font-size: 0.875em;
+    font-weight: 500;
+  }
+
+  & .group {
+    color: var(--blue);
+    font-weight: bold;
+  }
+
+  & .message-container {
+    border: 1px solid var(--light-grayish-blue-2);
+    background-color: rgb(249, 249, 249);
+    padding: 16px;
+    margin-top: 12px;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  & .picture {
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    right: 16px;
+  }
+}
+
+.not-read {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 8px;
+  background-color: var(--red);
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    width: 383px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: 730px;
+    margin: 0 auto;
+  }
+
+  .post {
+    font-size: 1em;
+  }
+}
